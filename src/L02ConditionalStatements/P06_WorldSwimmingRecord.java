@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class P06_WorldSwimmingRecord {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-
         // Четем от конзолата
         //пресмятаме забавянето
         //резултата, за който Иван преплува разстоянието +
@@ -23,7 +21,7 @@ public class P06_WorldSwimmingRecord {
 
         if (recordInSeconds > result) {
 
-            System.out.printf("Yes, he succeeded! The new world record is %.2f seconds", result);
+            System.out.printf("Yes, he succeeded! The new world record is %.2f seconds.", result);
 
         }else {
             double neededSeconds = result - recordInSeconds;
