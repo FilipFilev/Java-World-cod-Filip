@@ -1,4 +1,4 @@
-package L02ConditionalStatements;
+package ConditionalStatements31012023.L02ConditionalStatements;
 
 
 import java.util.Scanner;
