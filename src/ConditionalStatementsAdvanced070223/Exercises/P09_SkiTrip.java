@@ -1,9 +1,8 @@
 package ConditionalStatementsAdvanced070223.Exercises;
 
-import java.util.InvalidPropertiesFormatException;
 import java.util.Scanner;
 
-public class P09_SkiVacation {
+public class P09_SkiTrip {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,7 +18,7 @@ public class P09_SkiVacation {
 
         int days = Integer.parseInt(scanner.nextLine());
         String roomType = scanner.nextLine();
-        String assessment = scanner.nextLine();
+        String feedBack = scanner.nextLine();
 
         int nights = days - 1;
         double price =0;
@@ -52,9 +51,14 @@ public class P09_SkiVacation {
                 break;
         }
 
+        if (feedBack.equals("positive")){
+            price = price * 1.25;
+        } else if (feedBack.equals("negative")) {
+            price = price * 0.9;
 
+        }
 
-
+        System.out.printf("%.2f", price);
 
     }
 }
