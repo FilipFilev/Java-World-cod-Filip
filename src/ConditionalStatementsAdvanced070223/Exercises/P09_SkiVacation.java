@@ -21,6 +21,37 @@ public class P09_SkiVacation {
         String roomType = scanner.nextLine();
         String assessment = scanner.nextLine();
 
+        int nights = days - 1;
+        double price =0;
+
+        switch (roomType) {
+            case "room for one person":
+                price = nights *18;
+                break;
+            case "apartment":
+                price = nights * 25;
+                if (nights < 10) {
+                    price = price * 0.7; // price = price - price * 0.3
+                } else if (nights <= 15) {
+                    price = price * 0.65;
+                    
+                } else {
+                    price = price * 0.50;
+                }
+                break;
+            case "president apartment":
+                price = nights * 35;
+                if (nights < 10) {
+                    price = price * 0.9; // price = price - price * 0.1
+                } else if (nights <= 15) {
+                    price = price * 0.85;
+
+                } else {
+                    price = price * 0.80;
+                }
+                break;
+        }
+
 
 
 
