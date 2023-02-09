@@ -15,7 +15,6 @@ public class P09_SkiTrip {
         //5 крайнат цена се смята спрямо оценката
         //6 принтираме крайната сума
 
-
         int days = Integer.parseInt(scanner.nextLine());
         String roomType = scanner.nextLine();
         String feedBack = scanner.nextLine();
@@ -24,21 +23,19 @@ public class P09_SkiTrip {
         double price =0;
 
         switch (roomType) {
-            case "room for one person":
-                price = nights *18;
-                break;
-            case "apartment":
+            case "room for one person" -> price = nights * 18;
+            case "apartment" -> {
                 price = nights * 25;
                 if (nights < 10) {
                     price = price * 0.7; // price = price - price * 0.3
                 } else if (nights <= 15) {
                     price = price * 0.65;
-                    
+
                 } else {
                     price = price * 0.50;
                 }
-                break;
-            case "president apartment":
+            }
+            case "president apartment" -> {
                 price = nights * 35;
                 if (nights < 10) {
                     price = price * 0.9; // price = price - price * 0.1
@@ -48,7 +45,7 @@ public class P09_SkiTrip {
                 } else {
                     price = price * 0.80;
                 }
-                break;
+            }
         }
 
         if (feedBack.equals("positive")){
