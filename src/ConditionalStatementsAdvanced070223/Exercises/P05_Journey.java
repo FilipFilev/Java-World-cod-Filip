@@ -45,7 +45,7 @@ public class P05_Journey {
         }
 
         System.out.printf("Somewhere in %s%n", destination);
-        System.out.printf("%s – %.2f", restType, spentMoney);
+        System.out.printf("%s - %.2f", restType, spentMoney);
 
     }
 

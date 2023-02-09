@@ -10,6 +10,10 @@ public class Demo {
         if (num > 5 && num < 10 && num % 2 == 0 ) {
             System.out.println("Valid!");
         }
+
+        }
+
+
     }
 
-}
+
