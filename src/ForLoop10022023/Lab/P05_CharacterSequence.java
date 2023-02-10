@@ -7,13 +7,14 @@ public class P05_CharacterSequence {
         Scanner scanner = new Scanner(System.in);
 
 
-        String text = "Filip";
+        String text = scanner.nextLine();
 
-        int len = text.length();
-        System.out.println(len);
+        for (int i = 0; i < text.length(); i++) {
+            System.out.println(text.charAt(i));
 
-        char symbol = text.charAt(0);
-        System.out.println(symbol);
+        }
+
+
 
 
     }
