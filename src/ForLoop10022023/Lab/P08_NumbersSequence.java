@@ -11,7 +11,7 @@ public class P08_NumbersSequence {
 
         int maxNum = Integer.MIN_VALUE;
         int minNum = Integer.MAX_VALUE;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) { // в скобите на for зависи колко итерации ще имаме (брой повторения на цикъл)
             int currentNum = Integer.parseInt(scanner.nextLine());
 
             if (currentNum > maxNum) {
@@ -21,12 +21,10 @@ public class P08_NumbersSequence {
                 minNum = currentNum;
             }
 
-
         }
 
         System.out.printf("Max number: %d%n", maxNum);
         System.out.printf("Min number: %d%n", minNum);
         
     }
-
 }
