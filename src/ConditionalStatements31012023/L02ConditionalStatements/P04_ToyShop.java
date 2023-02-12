@@ -20,6 +20,7 @@ public class P04_ToyShop {
         //6. Проверяваме дали парите стигат за екскурзия.
 
         double tripPrice = Double.parseDouble(scanner.nextLine());
+
         int puzzlesCount = Integer.parseInt(scanner.nextLine());
         int dollsCount = Integer.parseInt(scanner.nextLine());
         int teddyBearsCount = Integer.parseInt(scanner.nextLine());
@@ -39,6 +40,7 @@ public class P04_ToyShop {
             double moneyLeft = totalSum - tripPrice;
             System.out.printf("Yes! %.2f lv left.", moneyLeft);
         } else {
+
             double moneyNeeded = tripPrice - totalSum;
             System.out.printf("Not enough money! %.2f lv needed.", moneyNeeded);
         }
