@@ -7,5 +7,6 @@ public class P01_Cinema {
         Scanner scanner = new Scanner(System.in);
 
 
+
     }
 }
