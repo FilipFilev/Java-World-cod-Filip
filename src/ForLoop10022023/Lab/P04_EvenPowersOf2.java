@@ -13,16 +13,7 @@ public class P04_EvenPowersOf2 {
         for (int i = 0;  i <= n; i += 2) {
             System.out.println(num);
             num = num * 2 * 2;
-
-
-
-
-
         }
-
-        
-
-
 
     }
 
