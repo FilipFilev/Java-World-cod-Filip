@@ -10,12 +10,10 @@ public class P06_VowelsSum {
 
         String text = scanner.nextLine();
 
-
         int sum = 0;
         //hello
         for (int i = 0; i < text.length(); i++) {
             char currentSymbol = text.charAt(i);
-
 
             switch (currentSymbol) {
                 case 'a':
@@ -33,13 +31,8 @@ public class P06_VowelsSum {
                 case 'u':
                     sum = sum + 5;
                     break;
-
             }
-
-
         }
-
-
         System.out.println(sum);
     }
 }
