@@ -7,7 +7,11 @@ public class Demo {
         Scanner scanner = new Scanner(System.in);
 
 
-        int num = Integer.parseInt(scanner.nextLine());
-        System.out.println(num);
+        int num1 = Integer.parseInt(scanner.nextLine());
+        int num2 = Integer.parseInt(scanner.nextLine());
+
+        int result = num1 + num2;
+
+        System.out.println(result);
     }
 }
