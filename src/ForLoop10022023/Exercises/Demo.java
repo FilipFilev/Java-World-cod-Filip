@@ -10,7 +10,7 @@ public class Demo {
         int num1 = Integer.parseInt(scanner.nextLine());
         int num2 = Integer.parseInt(scanner.nextLine());
 
-        int result = num1 / num2 +2;
+        int result = num1 / num2 +3;
 
         System.out.println(result);
     }
