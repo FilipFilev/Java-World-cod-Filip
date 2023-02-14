@@ -28,7 +28,7 @@ public class P02_HalfSumElement {
 
         } else {
             int diff = Math.abs(sumWithoutMaxNumber - maxNum);
-            System.out.println("No");
+            System.out.println("Noо");
             System.out.printf("Diff = %d%n", diff);
         }
     }
