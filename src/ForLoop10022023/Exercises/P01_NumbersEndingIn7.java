@@ -8,7 +8,7 @@ public class P01_NumbersEndingIn7 {
         for (int i = 7; i <= 997 ; i++) {
 
 
-            if (i % 10 ==7) {
+            if (i % 7 ==0) {
                 System.out.println(i);
             }
 
