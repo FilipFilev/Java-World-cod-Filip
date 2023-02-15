@@ -6,14 +6,12 @@ public class Demo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int a = 5;
+        String input = scanner.nextLine();
 
-        while (a <= 10) {
-//            if (a > 10) {
-//                break;
-//            }
-            System.out.println("a = " + a);
-            a++;
+        while (!input.equals("Stop")) {
+            System.out.println(input);
+
+            input = scanner.nextLine();
         }
     }
 }
