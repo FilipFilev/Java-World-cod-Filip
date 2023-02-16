@@ -6,7 +6,7 @@ public class Demo2 {
     public static void main(String[] args) {
 
 
-        int num = 3;
+        int num = 6;
 
         System.out.println(num);
 
