@@ -1,14 +1,15 @@
 package WhileLoop150223.Lab;
 
 
+import java.util.Scanner;
 
 public class Demo2 {
     public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
 
+        String gold = scanner.nextLine();
 
-        int num = 777;
-
-        System.out.println(num);
+        System.out.println(gold);
 
     }
 }
