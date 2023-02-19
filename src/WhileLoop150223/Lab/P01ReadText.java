@@ -9,12 +9,10 @@ public class P01ReadText {
         String text = scanner.nextLine();
 
         while (!text.equals("Stop")) {
-
             System.out.println(text);
             text = scanner.nextLine();
 
+
         }
-
     }
-
 }
