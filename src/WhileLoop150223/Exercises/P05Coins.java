@@ -11,7 +11,7 @@ public class P05Coins {
         //проверка за totalSum -> възможно най-голямата монета
         double sum = Double.parseDouble(scanner.nextLine());
 
-        double totalSum = sum * 100;
+        double totalSum = Math.floor(sum * 100);
         int countCoins = 0;
 
         while (totalSum > 0) {
