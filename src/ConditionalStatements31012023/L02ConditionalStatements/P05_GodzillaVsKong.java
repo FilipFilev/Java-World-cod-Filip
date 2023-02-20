@@ -2,7 +2,7 @@ package ConditionalStatements31012023.L02ConditionalStatements;
 
 import java.util.Scanner;
 
-public class P05_GodzillavsKong {
+public class P05_GodzillaVsKong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //1. Четем от конзолата
@@ -37,8 +37,6 @@ public class P05_GodzillavsKong {
             System.out.println("Action!");
             System.out.printf("Wingard starts filming with %.2f leva left.", differenceInMoney);
         }
-
-
 
     }
 }
