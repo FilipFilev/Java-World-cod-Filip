@@ -17,45 +17,43 @@ public class P09_SkiTrip {
 
         int days = Integer.parseInt(scanner.nextLine());
         String roomType = scanner.nextLine();
-        String feedBack = scanner.nextLine();
+        String grade = scanner.nextLine();
 
+        double sum = 0;
         int nights = days - 1;
-        double price =0;
+        if (roomType.equals("room for one person")) {
+            sum = nights * 18.00;
 
-        switch (roomType) {
-            case "room for one person" -> price = nights * 18;
-            case "apartment" -> {
-                price = nights * 25;
-                if (nights < 10) {
-                    price = price * 0.7; // price = price - price * 0.3
-                } else if (nights <= 15) {
-                    price = price * 0.65;
+        } else if (roomType.equals("apartment")) {
+            sum = nights * 25.00;
 
-                } else {
-                    price = price * 0.50;
-                }
+            if (days < 10) {
+                //sum = sum * 0.70;
+                sum *= 0.70;
+            } else if (days <= 15) {
+                sum = sum * 0.65;
+            } else {
+                sum = sum * 0.50;
             }
-            case "president apartment" -> {
-                price = nights * 35;
-                if (nights < 10) {
-                    price = price * 0.9; // price = price - price * 0.1
-                } else if (nights <= 15) {
-                    price = price * 0.85;
+        } else if (roomType.equals("president apartment")) {
+            sum = nights * 35.00;
 
-                } else {
-                    price = price * 0.80;
-                }
+            if (days < 10) {
+                sum = sum * 0.90;
+            } else if (days <= 15) {
+                sum = sum * 0.85;
+            } else {
+                sum = sum * 0.80;
             }
         }
 
-        if (feedBack.equals("positive")){
-            price = price * 1.25;
-        } else if (feedBack.equals("negative")) {
-            price = price * 0.9;
-
+        if (grade.equals("positive")) {
+            sum = sum * 1.25;
+        } else {
+            sum = sum * 0.90;
         }
 
-        System.out.printf("%.2f", price);
+        System.out.printf("%.2f", sum);
 
     }
 }
