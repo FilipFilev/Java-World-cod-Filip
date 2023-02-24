@@ -21,11 +21,9 @@ public class P05Travelling {
 
             }
 
-
             System.out.printf("Going to %s!%n", destination);
 
             input = scanner.nextLine();
-
 
         }
 
