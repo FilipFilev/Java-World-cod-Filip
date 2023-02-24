@@ -14,7 +14,7 @@ public class P05Travelling {
             double tripPrice = Double.parseDouble(scanner.nextLine());
 
 
-            double currentSum =0;
+            double currentSum = 0;
             while (currentSum < tripPrice) {
                 double amount = Double.parseDouble(scanner.nextLine());
                 currentSum += amount;
