@@ -16,7 +16,7 @@ public class P03SumPrimeNonPrime {
             boolean isPrime = true;
 
             if (currentNum < 0) {
-                System.out.printf("Number is negative.");
+                System.out.printf("Number is negative.%n");
                 input = scanner.nextLine();
                 continue;
             }
