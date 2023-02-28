@@ -10,6 +10,11 @@ public class P05SpecialNumbers {
 
         for (int currentNum = 1111; currentNum <= 9999; currentNum++) {
 
+            int first = currentNum / 1000;
+            int second = currentNum / 100 % 10;
+            int third = currentNum / 10 % 10;
+            int forth = currentNum % 10;
+
 
 
         }
