@@ -16,9 +16,9 @@ public class P05SpecialNumbers {
             int fourth = currentNum % 10;
 
             boolean checkFirstDigit = number % first == 0;
-            boolean checkSecondDigit = second != 0 && number % first == 0;
-            boolean checkThirdDigit = third != 0 && number % first == 0;
-            boolean checkFourthDigit = fourth != 0 && number % first == 0;
+            boolean checkSecondDigit = second != 0 && number % second == 0;
+            boolean checkThirdDigit = third != 0 && number % third == 0;
+            boolean checkFourthDigit = fourth != 0 && number % fourth == 0;
 
             if (checkFirstDigit && checkSecondDigit && checkThirdDigit && checkFourthDigit) {
                 System.out.printf("%d ", currentNum);
