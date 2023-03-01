@@ -12,13 +12,11 @@ public class P06CinemaTickets {
         int countKidTickets = 0;
         int countStandardTickets = 0;
 
-
         while (!input.equals("Finish")) {
-
             int availableSeats = Integer.parseInt(scanner.nextLine());
+
             String command = scanner.nextLine();
             String currentMovie = input;
-
 
             int countTicketsPerMovie = 0;
 
@@ -36,10 +34,9 @@ public class P06CinemaTickets {
                     case "kid":
                         countKidTickets++;
                         break;
-
                 }
 
-                if (countTicketsPerMovie >= availableSeats){
+                if (countTicketsPerMovie >= availableSeats) {
                     break;
                 }
 
@@ -51,10 +48,17 @@ public class P06CinemaTickets {
             double percentField = countTicketsPerMovie * 1.0 / availableSeats * 100;
             System.out.printf("%s - %.2f%% full.%n", currentMovie, percentField);
 
-
             input = scanner.nextLine();
         }
 
+        double percentKidTickets = countKidTickets * 1.0 / totalTickets * 100;
+        double percentStudentTickets = countStudentTickets * 1.0 / totalTickets * 100;
+        double percentStandardTickets = countStandardTickets * 1.0 / totalTickets * 100;
+
+        System.out.printf("Total tickets: %d%n", totalTickets);
+        System.out.printf("%.2f%% student tickets.%n", percentStudentTickets);
+        System.out.printf("%.2f%% standard tickets.%n", percentStandardTickets);
+        System.out.printf("%.2f%% kids tickets.%n", percentKidTickets);
 
     }
 }
