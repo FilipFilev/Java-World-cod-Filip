@@ -11,7 +11,7 @@ public class Demo {
 
 
 
-        int lastDigit = number % 10;
+        int lastDigit = number % 100;
 
         System.out.println(lastDigit);    }
 }
