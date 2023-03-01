@@ -11,7 +11,7 @@ public class Demo {
 
 
 
-        int lastDigit = number % 1000000;
+        int lastDigit = number % 10000000;
 
         System.out.println(lastDigit);    }
 }
