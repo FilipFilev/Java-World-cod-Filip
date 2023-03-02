@@ -13,8 +13,6 @@ public class P07_HotelRoom {
         double apartmentPrice = 0;
         double studioPrice = 0;
 
-
-
         switch (month) {
             case "May":
             case "October":
@@ -25,9 +23,7 @@ public class P07_HotelRoom {
                     studioPrice = studioPrice * 0.7;
                 } else if (countNights > 7) {
                     studioPrice = studioPrice * 0.95;
-
                 }
-
 
                 break;
 
@@ -55,8 +51,6 @@ public class P07_HotelRoom {
 
         System.out.printf("Apartment: %.2f lv.%n", apartmentPrice);
         System.out.printf("Studio: %.2f lv.", studioPrice);
-
-
 
 
     }
