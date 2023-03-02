@@ -5,12 +5,9 @@ import java.util.Scanner;
 public class P04FitnessCenter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //Вход
-        //•	На първия ред – броят на посетителите във фитнеса – цяло число в интервала [1...1000]
-        //•	За всеки един посетител на отделен ред – дейността във фитнеса – текст ("Back", "Chest", "Legs", "Abs", "Protein shake" или "Protein bar")
-        int people = Integer.parseInt(scanner.nextLine()); //5
-        //("Back", "Chest", 'Legs", "Abs"
-        //("Protein shake", "Protein bar"
+
+        int people = Integer.parseInt(scanner.nextLine());
+
         int backCount = 0;
         int chestCount = 0;
         int legsCount = 0;
@@ -49,5 +46,10 @@ public class P04FitnessCenter {
         System.out.printf("%d - protein shake%n", proteinShakeCount);
         System.out.printf("%d - protein bar%n", proteinBarCount);
 
+        int sumWorkout= backCount + chestCount + legsCount + absCount;
+        System.out.printf("%.2f%% - work out%n", sumWorkout * 1.0  / people * 100 );
+
+        int sumProtein = proteinShakeCount + proteinBarCount;
+        System.out.printf("%.2f%% - protein%n", sumProtein * 1.0  / people * 100 );
     }
 }
