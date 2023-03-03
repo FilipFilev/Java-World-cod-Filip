@@ -11,7 +11,6 @@ public class P06ProjectsCreation {
         int hours = projectsCount * 3;
 
 
-        System.out.printf("The architect %s will need %d hours to complete %d project/s. %n",
-                name, hours, projectsCount);
+        System.out.printf("The architect %s will need %d hours to complete %d project/s. %n", name, hours, projectsCount);
     }
 }
