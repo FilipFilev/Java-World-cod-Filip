@@ -8,7 +8,6 @@ public class P08_NumbersSequence {
 
         int n = Integer.parseInt(scanner.nextLine());
 
-
         int maxNum = Integer.MIN_VALUE;
         int minNum = Integer.MAX_VALUE;
         for (int i = 1; i <= n; i++) { // в скобите на for зависи колко итерации ще имаме (брой повторения на цикъл)
