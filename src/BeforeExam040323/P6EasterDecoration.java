@@ -48,7 +48,6 @@ public class P6EasterDecoration {
             System.out.printf("You purchased %d items for %.2f leva.%n", productCount, spentMoney);
             totalSpentMoney = totalSpentMoney + spentMoney;
 
-
         }
         double averageMoney = totalSpentMoney / clients;
         System.out.printf("Average bill per client is: %.2f leva.",averageMoney );
