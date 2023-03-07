@@ -13,11 +13,8 @@ public class P3EasterTrip {
         String destination = scanner.nextLine();
         String dates = scanner.nextLine();
         int nights = Integer.parseInt(scanner.nextLine());
-
         //проверка за дестинация
 
-        //•	Втори ред - дати, през които си е резервирала екскурзията - текст  с възможности "21-23", 
-        //"24-27" или "28-31"
         double pricePerNight = 0;
         switch (destination) {
             case "France":
