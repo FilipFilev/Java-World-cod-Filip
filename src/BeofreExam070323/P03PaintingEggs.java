@@ -6,29 +6,39 @@ public class P03PaintingEggs {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //•	Първи ред – размер на яйцата – текст с възможности "Large", "Medium" или "Small"
         String size = scanner.nextLine();
-        //•	Втори ред – цвят на яйцата – текст  с възможности "Red", "Green" или "Yellow"
         String color = scanner.nextLine();
-        //•	Трети ред – брой партиди – цяло число в интервала [1… 350]
         int count = Integer.parseInt(scanner.nextLine());
 
-        if (size.equals("Large")){
+        double price = 0;
+        if (size.equals("Large")) {
             if (color.equals("Red")) {
-
-            } else if (color.equals("Green")){
-                
-                
-            } else if (color.equals("")) {
-                
+                price = 16;
+            } else if (color.equals("Green")) {
+                price = 12;
+            } else if (color.equals("Yellow")) {
+                price = 9;
             }
-
-
         } else if (size.equals("Medium")) {
+            if (color.equals("Red")) {
+                price = 13;
+            } else if (color.equals("Green")) {
+                price = 9;
+            } else if (color.equals("Yellow")) {
+                price = 7;
+            }
+        } else if (size.equals("Small")) {
+            if (color.equals("Red")) {
+                price = 9;
+            } else if (color.equals("Green")) {
+                price = 8;
+            } else if (color.equals("Yellow")) {
+                price = 5;
+            }
+        }
 
+        double totalSum = (count * price) * 0.65;
 
-        } else if (size.equals("Small"));
-
-
+        System.out.printf("%.2f leva.%n", totalSum);
     }
 }
