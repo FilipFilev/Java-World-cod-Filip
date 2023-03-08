@@ -10,9 +10,9 @@ public class P06EasterCompetition {
 
         int maxPoints = Integer.MIN_VALUE;
         String winnerName = "";
+
         for (int i = 1; i <= easterBreadCount ; i++) {
             String bakerName = scanner.nextLine();
-
 
             int sumCurrentPoints = 0;
             String input = scanner.nextLine();
