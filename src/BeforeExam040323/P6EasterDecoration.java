@@ -23,11 +23,9 @@ public class P6EasterDecoration {
                 //•	кошничка за яйца (basket) – 1.50 лв.
                 //•	великденски венец (wreath) – 3.80 лв.
                 //•	шоколадов заек (chocolate bunny) – 7 лв.
-
                 switch (command) {
                     case "basket":
                         spentMoney += 1.50;
-
                         break;
                     case "wreath":
                         spentMoney += 3.80;
@@ -36,7 +34,6 @@ public class P6EasterDecoration {
                         spentMoney += 7;
                         break;
                 }
-
                 command = scanner.nextLine();
             }
             // всеки клиент закупил четен брой продукти,
