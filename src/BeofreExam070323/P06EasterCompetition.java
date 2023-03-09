@@ -9,10 +9,9 @@ public class P06EasterCompetition {
         int easterBreadCount = Integer.parseInt(scanner.nextLine());
 
         int maxScores = Integer.MIN_VALUE;
+        String winner = "";
         for (int i = 1; i <= easterBreadCount ; i++) {
             String name = scanner.nextLine();
-
-
 
 
 
@@ -26,17 +25,18 @@ public class P06EasterCompetition {
                 input = scanner.nextLine();
             }
 
-            if (totalScores > maxScores) {
-                maxScores = totalScores;
-                System.out.printf("%s is the new number 1!", name);
-            }
 
             System.out.printf("%s has %d points.%n", name, totalScores);
 
+            if (totalScores > maxScores) {
+                maxScores = totalScores;
+                winner = name;
+                System.out.printf("%s is the new number 1!%n", name);
+            }
         }
 
 
-
+        System.out.printf("%s won competition with %d points!%n", winner, maxScores);
 
     }
 }
