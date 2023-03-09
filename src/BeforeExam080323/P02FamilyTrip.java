@@ -19,7 +19,6 @@ public class P02FamilyTrip {
 
         double neededMoney = sumAllNights + expenses;
 
-
         double diff = Math.abs(budget - neededMoney);
         if (budget >= neededMoney) {
             System.out.printf("Ivanovi will be left with %.2f leva after vacation.%n", diff);
