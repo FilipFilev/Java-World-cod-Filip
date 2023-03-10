@@ -20,7 +20,9 @@ public class P05SpecialNumbers {
             boolean checkThirdDigit = third != 0 && number % third == 0;
             boolean checkFourthDigit = fourth != 0 && number % fourth == 0;
 
-            if (checkFirstDigit && checkSecondDigit && checkThirdDigit && checkFourthDigit) {
+            if (checkFirstDigit == true && checkSecondDigit == true && checkThirdDigit == true && checkFourthDigit == true) {
+
+
                 System.out.printf("%d ", currentNum);
             }
 
