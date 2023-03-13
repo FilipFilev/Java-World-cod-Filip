@@ -17,22 +17,26 @@ public class P07_TrekkingMania {
         for (int i = 0; i < groups; i++) {
             int peopleInGroup = Integer.parseInt(scanner.nextLine());
             allPeople += peopleInGroup;
+
             if (peopleInGroup <= 5)
                 maxPeopleMusala += peopleInGroup;
+
             else if (peopleInGroup <= 12)
                 maxPeopleMonblan += peopleInGroup;
+
             else if (peopleInGroup <= 25)
                 maxPeopleKilimandzharo += peopleInGroup;
+
             else if (peopleInGroup <= 40)
                 maxPeopleK2 += peopleInGroup;
+
             else
                 maxPeopleEverest += peopleInGroup;
-
         }
 
         double perMusala = (maxPeopleMusala / allPeople) * 100;
         System.out.printf("%.2f%%%n", perMusala);
-        double perMonblan = (maxPeopleMonblan / (allPeople)) * 100;
+        double perMonblan = (maxPeopleMonblan / allPeople) * 100;
         System.out.printf("%.2f%%%n", perMonblan);
         double perKilimandzharo = (maxPeopleKilimandzharo / allPeople) * 100;
         System.out.printf("%.2f%%%n", perKilimandzharo);
