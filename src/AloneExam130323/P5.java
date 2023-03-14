@@ -25,7 +25,7 @@ public class P5 {
             freeSpace -= volumeSuitcase;
             if (freeSpace <= 0){
                 isFull = true;
-                suitcaseCounter--;
+                suitcaseCounter = suitcaseCounter - 1;
                 break;
             }
 
