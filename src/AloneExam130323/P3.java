@@ -66,7 +66,6 @@ public class P3 {
                 break;
         }
 
-
        if (totalPrice >= 400 && totalPrice <= 1000) {
            totalPrice *= 0.85;
        } else if (totalPrice > 1000) {
