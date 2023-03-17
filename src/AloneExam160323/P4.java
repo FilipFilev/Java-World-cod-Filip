@@ -11,26 +11,40 @@ public class P4{
 
         String productName = scanner.nextLine();
         int counter = 0;
+        double copyBudget = budget;
+
+        boolean isNotEnough = false;
 
         while (!productName.equals("Stop")) {
             double productPrice = Double.parseDouble(scanner.nextLine());
-            double leftBudget = budget;
-            leftBudget -= productPrice;
             counter++;
 
-
-            if (productPrice > leftBudget ){
-                break;
+            if (counter % 3 == 0){
+            productPrice /= 2;
             }
 
+            copyBudget -= productPrice;
 
 
+            if (copyBudget < 0) {
+                isNotEnough = true;
+                break;
+            }
 
 
             productName = scanner.nextLine();
         }
 
 
-        System.out.println();
+        if (isNotEnough) {
+            System.out.println("You don't have enough money!");
+            System.out.printf("You need %.2f leva!", Math.abs(copyBudget));
+
+
+        }else {
+            System.out.printf("You bought %d products for %.2f leva.", counter, budget - copyBudget);
+        }
+
+
     }
 }
