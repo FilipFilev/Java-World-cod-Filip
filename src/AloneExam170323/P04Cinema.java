@@ -9,7 +9,6 @@ public class P04Cinema {
 
         int capacity = Integer.parseInt(scanner.nextLine());
 
-
         double income = 0;
         int seatsLeft = capacity;
 
