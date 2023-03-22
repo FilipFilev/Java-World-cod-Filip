@@ -20,7 +20,6 @@ public class P6B {
             int currentJump = Integer.parseInt(scanner.nextLine());
             jumpsCounter++;
 
-
             if (currentJump > theBar) {
                 if (theBar == goal) {
                     System.out.printf("Tihomir succeeded, he jumped over %dcm after %d jumps.", theBar,jumpsCounter);
