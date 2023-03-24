@@ -12,6 +12,7 @@ public class P5 {
 
         int suitcaseCounter = 0;
         boolean isFull = false;
+
         double freeSpace = volumeAirplane;
 
         while (!input.equals("End")) {
