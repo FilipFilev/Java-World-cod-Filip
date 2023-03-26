@@ -10,7 +10,7 @@ public class DemoExercises {
 
         //java
         //0123
-        for (int i = 9; i <text.length() ; i++) {
+        for (int i = 0; i <text.length() ; i++) {
             char symbol = text.charAt(i);
             System.out.print(symbol);
 
